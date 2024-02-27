@@ -9,9 +9,9 @@ pipeline {
     stages {
         stage("Deploy") {
             steps {
-                echo "Input is set: ${deploymentName} \n"
-                echo "Input is set: ${azDeploy} \n"
-                echo "Input is set: ${confirmDeploy} \n"
+                echo "Input is set: ${params.deploymentName} \n"
+                echo "Choice is set: ${params.azDeploy} \n"
+                echo "Boolean is set: ${params.confirmDeployment} \n"
             }
         }
     }
